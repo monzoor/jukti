@@ -1,6 +1,9 @@
 .header {
     &__text {
-        margin: 0 auto;
+        text-align: center;
+        @media only screen and (min-width: 768px) {
+          text-align: left;
+        }
     }
     &__avatar {
       background-image: url(../images/20200608_131029.jpg);
@@ -11,9 +14,6 @@
       border: 2px solid $green;
       border-radius: 50%;
       margin: 0 auto;
-      @media only screen and (min-width: 768px) {
-        margin-left: 200px;
-        }
     }
   
     &__button {

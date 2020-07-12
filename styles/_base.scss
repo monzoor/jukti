@@ -5,42 +5,42 @@ body {
     color: $primary;
     line-height: 1.5;
 }
-* a {
-    text-decoration: none;
-    color: $green;
-    &:hover {
-        color: $black;
+.container {
+    width: 100%;
+    margin: 20px auto;
+    @media only screen and (min-width: 768px) {
+        width: 1024px;
     }
 }
 
 .sec {
     margin: $space-xl $space $space-sm;
-    @extend .bg-whitesmoke;
+    background-color: $whitesmoke;
     @extend .bor-radius;
     padding: $space-xl;
     border-bottom: 5px solid $green;
+    display: flex;
 }
-  
-.container {
-    width: 80%;
-    margin: 20px auto;
-    @media only screen and (min-width: 768px) {
-        width: 960px;
-        display: flex;
-        justify-content: start;
+.col {
+    &-half {
+        grid-template-columns: auto;
+        @media only screen and (min-width: 768px) {
+            grid-template-columns: auto auto;
+        }
+    }
+    &-half-left-small {
+        grid-template-columns: auto;
+        @media only screen and (min-width: 768px) {
+            grid-template-columns: 25% auto;
+        }
     }
 }
-.col-left {
-    width: 98%;
-    @media only screen and (min-width: 768px) {
-        width: 25%;
-        margin-right: 2%;
-    }
-    
-}
-.col-right {
-    width: 98%;
-    @media only screen and (min-width: 768px) {
-        width: 73%;
+
+
+* a {
+    text-decoration: none;
+    color: $green;
+    &:hover {
+        color: $black;
     }
 }
