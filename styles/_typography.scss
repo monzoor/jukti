@@ -1,0 +1,22 @@
+h1, h2, h3, h4 {
+  font-family: 'Sanchez', serif;
+}
+
+.txt {
+  &-center {
+    text-align: center;
+  }
+  &-upper {
+    text-transform: uppercase;
+  }
+
+  &-white {
+    color: $white;
+  }
+  &-deep-blue {
+    color: $deep-blue;;
+  }
+  &-blue {
+    color: $blue;;
+  }
+}

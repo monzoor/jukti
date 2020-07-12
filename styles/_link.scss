@@ -1,0 +1,12 @@
+.bars {
+    margin-left: 10px;
+    background-color: $light-grey;
+    width: 100%;
+    height: 25px;
+    @extend .bor-radius;
+}
+.link {
+    .link__details {
+        margin: 0px $space-xl;
+    }
+}

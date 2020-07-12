@@ -1,24 +1,15 @@
 {
-  "name": "jukti",
+  "name": "sass",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "./node_modules/node-sass/bin/node-sass styles/style.scss build/style.min.css -w --output-style compressed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/monzoor/jukti.git"
-  },
-  "author": "Monzoor",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/monzoor/jukti/issues"
-  },
-  "homepage": "https://github.com/monzoor/jukti#readme",
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "node-sass": "^4.14.1"
   }
 }

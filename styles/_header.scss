@@ -1,0 +1,28 @@
+.header {
+    &__text {
+        margin: 0 auto;
+    }
+    &__avatar {
+      background-image: url(../images/20200608_131029.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; 
+      width: 240px;
+      height: 240px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      margin: 0 auto;
+      @media only screen and (min-width: 768px) {
+        margin-left: 200px;
+        }
+    }
+  
+    &__button {
+      margin: $space-xs;
+      padding: $space-xs;
+      border: none;
+      border-radius: $space-xs;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
